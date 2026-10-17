@@ -8,6 +8,285 @@
 :root{--bg:#100f22;--panel:#1c1a35;--panel2:#252244;--text:#f7f4ff;--muted:#b9b3d8;--pink:#ff7fc7;--blue:#77d7ff;--gold:#ffd878;--line:#4b456f}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#302253 0,#141226 48%,#0e0d1b 100%);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}button{border:0;border-radius:12px;padding:11px 15px;color:#171329;background:linear-gradient(135deg,#ffe19b,#ff8fd1);font-weight:800;cursor:pointer}button.secondary{background:#343052;color:var(--text);border:1px solid var(--line)}button:disabled{opacity:.4;cursor:not-allowed}.wrap{max-width:1180px;margin:auto;padding:18px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.brand{font-size:1.45rem;font-weight:900;letter-spacing:.04em}.brand span{color:var(--pink)}.meters{display:flex;gap:8px;flex-wrap:wrap}.meter{background:#211e3d;border:1px solid var(--line);padding:8px 12px;border-radius:12px;color:var(--muted);font-size:.9rem}.meter b{color:white}.nav{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.nav button{background:#292543;color:#ddd7f4;border:1px solid var(--line)}.nav button.active{background:linear-gradient(135deg,#ffcaec,#b9a8ff);color:#1c1532}.hero{background:linear-gradient(115deg,#33204e,#1e244a 65%,#39204d);border:1px solid #66538c;border-radius:22px;padding:22px;margin-bottom:18px;position:relative;overflow:hidden}.hero h1{font-size:clamp(1.5rem,4vw,2.5rem);margin:0 0 8px}.hero p{color:#d6cdea;margin:0;max-width:700px}.section{display:none}.section.active{display:block}.panel{background:rgba(29,26,54,.94);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:16px}.panel h2,.panel h3{margin:0 0 12px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}.card{position:relative;border-radius:17px;padding:7px;background:linear-gradient(145deg,#9c91bb,#4b466b);box-shadow:0 10px 28px #0004;overflow:hidden}.card.SSR{background:linear-gradient(145deg,#fff0a5,#d38a31,#fff1bb)}.card.SR{background:linear-gradient(145deg,#f4d5ff,#9275c7,#e8d4ff)}.card.R{background:linear-gradient(145deg,#a9eaff,#447bc4,#c7f4ff)}.card.N{background:linear-gradient(145deg,#d5d2e5,#77748d,#e8e7f0)}.card-inner{background:#18172b;border-radius:12px;overflow:hidden;height:100%}.portrait{height:215px;background:linear-gradient(135deg,#4a426e,#24233d);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}.portrait img{width:100%;height:100%;object-fit:cover}.placeholder{font-size:3rem;opacity:.7}.rarity{position:absolute;top:9px;left:9px;padding:4px 8px;border-radius:9px;background:#120f27dc;border:1px solid #fff7;font-weight:900;font-size:.85rem}.awaken{position:absolute;bottom:8px;left:8px;color:#ffe17d;text-shadow:0 1px 5px #000;font-size:1.05rem;letter-spacing:1px}.card-info{padding:11px}.card-name{font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lv{display:flex;justify-content:space-between;gap:6px;font-size:.83rem;color:#ddd8f2;margin-top:6px}.bar{height:7px;background:#393652;border-radius:20px;overflow:hidden;margin:6px 0}.bar span{display:block;height:100%;background:linear-gradient(90deg,#69dcff,#f28ad8);width:0}.card-actions{display:flex;gap:6px;margin-top:9px}.card-actions button{flex:1;padding:7px 5px;font-size:.8rem}.formgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:6px;color:var(--muted);font-size:.9rem}.field input,.field select{background:#121126;color:white;border:1px solid var(--line);border-radius:10px;padding:10px;width:100%}.course{display:flex;align-items:center;gap:14px;border:1px solid var(--line);background:#211e3b;border-radius:15px;padding:14px;margin:9px 0}.course .emoji{font-size:2rem}.course .desc{flex:1}.course h3{margin:0 0 4px}.course p{margin:0;color:var(--muted);font-size:.9rem}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.slotgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.slot{min-height:110px;background:#17152c;border:1px dashed #70678f;border-radius:12px;padding:8px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}.slot select{max-width:100%;background:#282442;color:white;border:1px solid #4b456f;border-radius:8px;padding:5px}.notice{padding:12px;border-radius:12px;background:#292443;color:#ded7f6;margin:10px 0}.small{font-size:.85rem}.empty{padding:28px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#fff0fb;color:#26152c;border-radius:14px;padding:12px 18px;box-shadow:0 8px 35px #0008;display:none;z-index:10;font-weight:800;max-width:90vw}.result{background:linear-gradient(135deg,#312550,#252548);border:1px solid #74609d;border-radius:16px;padding:16px;margin-top:14px}.foot{color:#938bac;text-align:center;font-size:.8rem;padding:15px}@media(max-width:600px){.wrap{padding:12px}.panel{padding:13px}.portrait{height:190px}.slotgrid{gap:5px}.slot{min-height:92px;padding:4px;font-size:.8rem}.course{padding:10px}.course .emoji{font-size:1.5rem}}
 </style>
+
+/* ===== STARLIGHT OFFICE カードデザイン強化 ===== */
+
+/* 全体を明るい星空カラーに */
+:root {
+  --bg: #17132d;
+  --panel: #282044;
+  --panel2: #382957;
+  --text: #fffaff;
+  --muted: #d3c5e8;
+  --pink: #ff9edb;
+  --blue: #91e5ff;
+  --gold: #ffe59a;
+  --line: #76639b;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 10% 0%, #58366e 0%, transparent 42%),
+    radial-gradient(ellipse at 90% 10%, #293f79 0%, transparent 38%),
+    linear-gradient(145deg, #17132d, #241632 55%, #171b39);
+}
+
+.panel {
+  background: linear-gradient(145deg, #302448f5, #211d3bf5);
+  border-color: #79649e;
+  box-shadow: 0 8px 28px #08051555;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at 85% 15%, #ffdcff30 0 3px, transparent 4px),
+    radial-gradient(circle at 92% 45%, #ffffff35 0 2px, transparent 3px),
+    linear-gradient(120deg, #58316f, #303c77 60%, #75416e);
+  border-color: #b99be4;
+  box-shadow: 0 12px 35px #08051555;
+}
+
+/* カード外枠 */
+.card {
+  position: relative;
+  padding: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow:
+    0 8px 22px #08051570,
+    0 0 0 1px #ffffff35;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px #08051585, 0 0 18px #ffffff20;
+}
+
+/* レアリティごとの豪華なフレーム */
+.card.SSR {
+  background: linear-gradient(
+    135deg,
+    #fff8c9, #ffbf48, #fff5a8,
+    #d88a24, #fff0a0, #fff9df
+  );
+  box-shadow: 0 0 16px #ffda6b55, 0 8px 24px #08051570;
+}
+
+.card.SR {
+  background: linear-gradient(
+    135deg,
+    #fff0ff, #edb5ff, #9865d9,
+    #f8d6ff, #b58aff, #fff0ff
+  );
+  box-shadow: 0 0 14px #d8a0ff45, 0 8px 24px #08051570;
+}
+
+.card.R {
+  background: linear-gradient(
+    135deg,
+    #e3ffff, #7cdaff, #5389e4,
+    #c7f4ff, #73caff, #e7ffff
+  );
+  box-shadow: 0 0 12px #80dfff35, 0 8px 24px #08051570;
+}
+
+.card.N {
+  background: linear-gradient(
+    135deg,
+    #fff0f8, #d9c9f1, #a7a3d5,
+    #f9e6f5, #c5c0e9
+  );
+}
+
+/* カード内側 */
+.card-inner {
+  position: relative;
+  background: linear-gradient(160deg, #29203e, #17152b 75%);
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid #ffffff20;
+}
+
+/* ★重要：画像を切り抜かず、全体を表示する */
+.portrait {
+  height: auto;
+  aspect-ratio: 3 / 4;
+  min-height: 190px;
+  max-height: 340px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at center, #665080 0%, #29203e 72%);
+  border-bottom: 2px solid #ffffff30;
+}
+
+/* 元画像の縦横比を維持して全体を表示 */
+.portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  object-position: center center;
+}
+
+/* 画像の上に、控えめな光の演出 */
+.portrait::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    135deg,
+    #ffffff15 0%,
+    transparent 30%,
+    transparent 72%,
+    #ffb9f215 100%
+  );
+}
+
+/* レアリティ表示を宝石風に */
+.rarity {
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ffffffb0;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #20142deF, #48305eeF);
+  color: #fff;
+  text-shadow: 0 1px 5px #000;
+  box-shadow: 0 3px 10px #0006;
+  letter-spacing: .06em;
+}
+
+.card.SSR .rarity {
+  color: #ffe69a;
+  border-color: #ffe69a;
+}
+
+.card.SR .rarity {
+  color: #f2c5ff;
+  border-color: #e8b8ff;
+}
+
+.card.R .rarity {
+  color: #a9eaff;
+  border-color: #a9eaff;
+}
+
+/* 覚醒スター */
+.awaken {
+  z-index: 2;
+  left: 8px;
+  bottom: 8px;
+  padding: 3px 7px;
+  border-radius: 8px;
+  background: #171027b8;
+  color: #ffe58a;
+  text-shadow: 0 0 7px #ffc94d;
+  font-size: .95rem;
+}
+
+/* カード情報欄 */
+.card-info {
+  padding: 12px 10px;
+  background: linear-gradient(180deg, #2a2241, #1a172e);
+}
+
+.card-name {
+  color: #fff8ff;
+  font-size: 1rem;
+  letter-spacing: .02em;
+}
+
+.lv {
+  color: #e6d9ff;
+}
+
+.bar {
+  height: 9px;
+  background: #100d20;
+  border: 1px solid #ffffff20;
+  box-shadow: inset 0 1px 3px #0006;
+}
+
+.bar span {
+  background: linear-gradient(90deg, #7ae7ff, #a99aff, #ff91d7);
+  box-shadow: 0 0 8px #a99aff70;
+}
+
+.card-info .small.muted {
+  color: #d4c4ee;
+}
+
+/* ボタンを明るく */
+button {
+  box-shadow: 0 3px 10px #08051525;
+  transition: filter .15s ease, transform .15s ease;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.12);
+}
+
+button:active:not(:disabled) {
+  transform: scale(.98);
+}
+
+button.secondary {
+  background: linear-gradient(135deg, #554574, #393052);
+  border-color: #8973ae;
+  color: #fff7ff;
+}
+
+.nav button {
+  background: linear-gradient(135deg, #393052, #282340);
+}
+
+.nav button.active {
+  background: linear-gradient(135deg, #ffc9eb, #c4b4ff, #a7eaff);
+  color: #241633;
+  border-color: #fff0ff;
+}
+
+/* スマホでも画像を全体表示 */
+@media (max-width: 600px) {
+  .portrait {
+    min-height: 150px;
+    max-height: 270px;
+    aspect-ratio: 3 / 4;
+  }
+
+  .card {
+    border-radius: 16px;
+    padding: 4px;
+  }
+
+  .card-inner {
+    border-radius: 12px;
+  }
+
+  .card-info {
+    padding: 10px 7px;
+  }
+
+  .card-actions {
+    flex-wrap: wrap;
+  }
+
+  .card-actions button {
+    min-width: 0;
+    padding: 8px 3px;
+    font-size: .75rem;
+  }
+}
+
 </head>
 <body><div class="wrap">
 <header class="top"><div class="brand">✦ STARLIGHT <span>OFFICE</span></div><div class="meters"><div class="meter">🎟️ チケット <b id="tickets">30/30</b></div><div class="meter">⚡ スタミナ <b id="stamina">10/10</b></div><div class="meter">👥 所属アイドル <b id="count">0</b></div></div></header>
